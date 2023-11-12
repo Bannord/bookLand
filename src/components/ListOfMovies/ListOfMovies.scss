@@ -1,0 +1,28 @@
+.book_title_list {
+            
+    margin-bottom: 42px;
+    padding-left: 20px;
+    
+    .title_book {
+        font-weight: 400;
+        max-width: 259px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+        color: #4f4f4f;
+        margin-right: 6px;
+    }
+    .active {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        color: #F86D0C;
+    }
+
+    .cost_item {
+        color: #A7A7A7;
+    }
+    .title_book:last-child {
+
+    }
+}

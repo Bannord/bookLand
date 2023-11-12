@@ -1,0 +1,46 @@
+.header_wrapper {
+    padding-top: 20px;
+    margin-bottom: 62px;
+
+
+    .header_row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .img_logo_wrapper {
+            width: 186px;
+            height: 58px;
+
+            .img_logo {
+                width: 186px;
+            height: 58px;
+            }
+        }
+
+        .header_title_wrapper{
+
+            .header_title_ {
+                font-size: 32px;
+            }
+        }
+
+        .user_info_wrapper {
+            display: flex;
+            align-items: center;
+
+            .user_info_text_wrapper {
+                margin-right: 16px;
+            }
+
+            .img_user_wrapper {
+                width: 58px;
+                height: 58px;
+                img {
+                    width: 58px;
+                height: 58px;
+                }
+            }
+        }
+    }
+}
