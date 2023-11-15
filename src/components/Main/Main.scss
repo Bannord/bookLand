@@ -3,6 +3,7 @@
     
 
     .left_sidebar {
+        margin-right: 10px;
         width: 279px;
 
         .sidebar_title {
@@ -38,7 +39,7 @@
                 justify-content: space-between;
                 width: 514px;
 
-                .searchbar {
+                .search_by_name {
                     margin-right: 16px;
                     padding: 10px;
                     width: 350px;
@@ -91,39 +92,9 @@
                 .btn_wrapper {
                     display: flex;
 
-                .btn_tile {
-
-                    width: 38px;
-                    height: 38px;
-                    border-radius: 25px;
-                   background-color: #F85908;
-                   margin-right: 16px;
-                   
-                   
-
-                    .tile_img {
-                        padding: 9px;
-                    }
                 
 
-                  
-                }
-
-                .btn_list {
-                    
-                    width: 38px;
-                    height: 38px;
-                    border-radius: 25px;
-                    border: 1px solid gray;
-                    
-                   
-                   
-
-                    .list_img {
-                        padding: 9px;
-                    }
                 
-                }
                 }
 
             } 

@@ -1,0 +1,23 @@
+.btn_tile {
+
+    width: 38px;
+    height: 38px;
+    border-radius: 25px;
+    border: 1px solid gray;
+    background-color: gray;
+   margin-right: 16px;
+   
+   
+
+   
+    .tile_img {
+        padding: 9px;
+    }
+
+
+  
+}
+
+.active {
+    background-color: #F85908;
+   }
