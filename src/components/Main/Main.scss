@@ -10,6 +10,7 @@
 
             font-size: 20px;
             color: #F86D0C;
+            
         }
         .sidebar_title::after {
             content: '';
@@ -101,7 +102,7 @@
         }
     }
 
-    .book_list_wrapper {
+    .list_container {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -128,6 +129,8 @@
                 line-height: 18px;
                 margin-bottom: 17px;
             }
+
+            
 
             .author_wrapper {
                 margin-bottom: 28px;
@@ -160,4 +163,77 @@
         
 
     }
+
+    .tile_container {
+       
+        
+        .card_wrapper {
+            display: flex;
+          
+            margin-bottom: 16px;
+            box-shadow:  0 0 5px rgba(0,0,0,.2);
+            border-radius: 20px;
+
+            .img_wrapper {
+                margin-right: 16px;
+                width: 120px;
+                height: 170px;
+                padding: 24px 16px;
+                img {
+                    width: 120px;
+                    height: 170px;
+                }
+            }
+
+            .card_content_wrapper{
+
+                width: 950px;
+
+                .title_book {
+                    padding-top: 24px;
+                    
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 32px;
+                    margin-bottom: 8px;
+                }
+
+                .author_wrapper {
+
+                   
+
+                    color: #727272;
+                    margin-bottom: 70px;
+                }
+            }
+
+            .block_added_wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                .added_book {
+                    width: 174px;
+                    border-radius: 20px;
+                    border: 0;
+                    background-color: #F8610A;
+                    color: white;
+                }
+            }
+        }
+    }
 }
+
+.my-node-enter {
+    opacity: 0.4;
+  }
+  .my-node-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  .my-node-exit {
+    opacity: 1;
+  }
+  .my-node-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }

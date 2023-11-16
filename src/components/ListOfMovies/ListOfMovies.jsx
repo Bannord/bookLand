@@ -5,7 +5,7 @@ const ListOfMovies = () => {
   
     return ( 
         <ul className="book_title_list">
-          <li className="title_book active">Все книги </li>
+          <li className="title_book activee">Все книги </li>
           <li className="title_book">
             Бизнес-книги <span className="cost_item">14</span>
           </li>

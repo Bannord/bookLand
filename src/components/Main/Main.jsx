@@ -1,5 +1,7 @@
 import React from "react";
 
+import { CSSTransition } from "react-transition-group";
+
 import "./Main.scss";
 
 
@@ -15,18 +17,22 @@ import TileBtn from "../UI/TileBtn/TileBtn";
 const Main = () => {
   const [visible, setVisible] = React.useState(false);
 
-  // хочу по кнопкке орисовывать картинку по другому
+  
 
-  // const [changeView, setChangeView] = React.useState(false)
+  const [isTileMode, setIsTileMOde] = React.useState(false)
 
-  // const changeViewer = () => {
-  //   setChangeView(changeView)
-  // }
+  const toggleMode = () => {
+    if (!isTileMode) {
+      setIsTileMOde(!isTileMode);
+    }
+  };
 
-  // хочу по клику картинку рисовать
+
+ 
 
   const handleclikcer = () => {
     setVisible(!visible);
+    
   };
 
   return (
@@ -35,7 +41,12 @@ const Main = () => {
         <h3 className="sidebar_title" onClick={handleclikcer}>
           Витрина книг
         </h3>
-        {visible ? <ListOfMovies /> : null}
+        {/* css animation on open  */}
+        <CSSTransition in={visible} timeout={300}
+        classNames='my-node' unmountOnExit>
+        <ListOfMovies /> 
+        </CSSTransition>
+        {/* css animation on open   */}
         <TermOfUse />
       </div>
       <div className="rightbar">
@@ -43,12 +54,13 @@ const Main = () => {
           <SearchList />
           <div className="change_view">
             <div className="btn_wrapper">
-              <TileBtn />
-              <ListBtn />
+              
+              <TileBtn tileChange={toggleMode} isTileMode={isTileMode}/>
+              <ListBtn listChange={() => setIsTileMOde(false)} isTileMode={isTileMode}/>
             </div>
           </div>
         </div>
-        <ListBooks />
+        <ListBooks isTileMode={isTileMode} />
        
       </div>
     </div>

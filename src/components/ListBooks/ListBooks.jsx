@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 
 
-const ListBooks = () => {
+const ListBooks = ({isTileMode}) => {
     const [allBooks, setAllBooks] = React.useState([])
 
     useEffect(() => {
@@ -17,14 +17,13 @@ const ListBooks = () => {
         })
 
     }, [])
+
+    const containerClass = isTileMode ? 'tile_container' : 'list_container';
     return ( 
-        <div className="book_list_wrapper">
+        <div className={containerClass}>
             {allBooks.map((book) => {
                 return <CardItem book={book} key={book.id}/>
             })}
-        
-        
-        
        
         </div>
      );

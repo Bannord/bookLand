@@ -3,11 +3,13 @@ import React from "react";
 
 import listIcon from "../../../assets/listicon.svg";
 
-const ListBtn = () => {
+const ListBtn = ({listChange, isTileMode}) => {
+
+    const btnActive = isTileMode ? 'btn_list ' : 'btn_list active'
 
 
     return ( 
-        <div className="btn_list">
+        <div className={btnActive} onClick={listChange}>
             <img src={listIcon} alt="#listIcon" className="list_img" />
         </div>
      );
