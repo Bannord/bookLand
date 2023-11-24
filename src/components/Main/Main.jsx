@@ -1,6 +1,7 @@
 import React from "react";
 
 import { CSSTransition } from "react-transition-group";
+import axios from "axios";
 
 import "./Main.scss";
 
@@ -26,9 +27,27 @@ const Main = () => {
       setIsTileMOde(!isTileMode);
     }
   };
+  const url = '127.0.0.1:8080/api/v1/catalog/books'
 
 
+  
+//   async function Lol() {
+//     try {
+//       const response = await axios.get(url, {
+//           headers: {Authorization: `Bearer ${localStorage.getItem('token')}`}
+//       })
+  
+//       console.log(response.data)
+      
+      
+      
+//   } catch(e) {
+//    alert('вы не авторизованы, пожалуйста войди в ваш аккаунт!')
+//   }
+  
+//  хуйня это все}
  
+// console.log(Lol())
 
   const handleclikcer = () => {
     setVisible(!visible);
